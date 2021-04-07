@@ -19,10 +19,10 @@ var minorDiscount = (totPrice * 20) / 100;
 var seniorDiscount = (totPrice * 60) / 100;
 //calcolo sconto
 if(userAge < 18){
-  (totPrice - minorDiscount);
+  totPrice = totPrice - minorDiscount;
 }
 else if(userAge > 65){
-  (totPrice - seniorDiscount);
+  totPrice = totPrice - seniorDiscount;
 }
 
 //risultato
